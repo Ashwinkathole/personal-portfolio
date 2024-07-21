@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0px;
+            background-color:white;
+            box-sizing: border-box;
+        }
+        #box{
+            height:600px;
+            background-color: black;
+            
+        }
+        .small{
+            height:40px;
+            margin-left: 430px;
+            margin-right: 410px;
+            background-color:rgb(241, 241, 123);
+            margin-bottom:600px;
+            box-sizing: border-box;border-bottom-left-radius:15px;
+            border-bottom-right-radius: 15px;
+            font-weight: bold;
+            margin-top:-20px;
+            border-bottom: yellow solid;
+            border-left: yellow solid;
+            border-right:yellow solid;
+        }
+        .home{
+            height:80px;
+            background-color:rgb(19, 17, 19);
+            padding-top:5px;
+        }
+        li{
+            list-style: none;
+            margin-top: 30px;
+            color: white;
+            margin-left: 140px;
+            font-size: 20px;
+        }
+        .about{
+            padding-left: 90px;
+            margin-top: -53px;
+        }
+        .project{
+            padding-left:210px;
+            margin-top:-53px;
+        }
+        .skill{
+            padding-left:310px;
+            margin-top:-53px;
+        }
+        .contact{
+            padding-left: 400px;
+            margin-top: -53px;
+        }
+        h3{
+            padding-left: 30px;
+            text-align: center;
+        }
+        img{
+            height:20px;
+            margin-top: -100px;
+            margin-top: 6px;
+        }
+        a{
+            padding-left: 5px;
+        }
+        #objective{
+            height: 600px;
+        }
+        .information{
+            display: flex;
+            flex:1; height:80px;
+            width:500px;
+            margin-top: 10px;
+            margin-left: 140px;
+            font-size: 35px;
+        }
+        h4{
+            padding-left:140px;
+            font-size: 30px;
+            font-weight: lighter;
+            margin-top: 30px;
+        }
+        p{
+            padding-left:140px;
+            font-size: 20px;
+            margin-top: -30px;
+        }
+        .blue{
+            background-color: blue;
+            height: 30px;
+            color: white;
+            margin-top: 20px;
+            border-radius: 7px;
+            padding-left: 10px;
+            border:1px solid;
+            padding-right: 10px;
+        }
+        .white{
+            padding-left: 10px;
+            border-radius: 7px;
+            height:30px;
+            border-color: blue;
+            margin-left: 10px;
+            padding-left: 20px;
+            padding-right:20px;
+        }
+        .picture{
+            display: flex;
+            flex:1;
+            height:500px;
+            width:500px;
+            box-sizing: border-box;
+            border: 1px solid;
+            margin-left:700px;
+            margin-top: -300px;
+            
+        }
+        .container{
+            height: 700px;
+            width: 700px;
+            border: 1px white solid;
+        }
+        video{
+            height: 370px;
+            filter:grayscale(70%);
+            margin-left:300px;
+            margin-top:-600px;
+            margin-bottom: 380px;
+            width: 700px;
+        }
+        .picture{
+            height:400px;
+            width:450px;
+        }
+        .picture>img{
+            height:600px;
+            width:500px;
+            margin-top: -150px;
+            filter: grayscale(80%);
+            box-shadow: 0 0 15px;
+        }
+        .box1{
+            
+            
+            height:120px;
+            box-shadow: 0px 0px 40px rgb(196, 192, 192);
+            
+            margin-left: 140px;
+            margin-top: 55px;
+            background-color: white;
+            border-radius: 10px;
+            margin-right: 190px;
+        }
+        .box1>p{
+            text-align: center;
+            margin-top: 10px;
+            padding-left: 20px;
+            font-size: 30px;
+            padding-top: 15px;
+            font-weight: bold;
+        }
+        hr{
+            width:350px;
+            margin-top: -22px;
+        }
+        .html{
+            padding-left: 250px;
+            font-size: 20px;
+        }
+        .css{
+            padding-left: 430px;
+            margin-top: -23px;
+            font-size: 20px;
+        }
+        .javascript{
+            padding-left:600px;
+            margin-top:-23px;
+            font-size:20px;
+        }
+        .expertise>h2{
+            padding-left: 140px;
+            font-size: 30px;
+            margin-top: 30px;
+        }
+        .box-expertise{
+            display: flex;
+            flex:1;
+            height:210px;
+            box-shadow: 0px 0px 40px rgb(196, 192, 192);
+            margin-left: 140px;
+            margin-top: 30px;
+            margin-right: 190px;
+
+        }
+        .box-expertise>img{
+            height:190px;
+            width:200px;
+            margin-top:0px;
+            border-radius: 10px;
+        }
+        .box-expertise>h2{
+            margin-top:5px;
+            margin-left: 20px;
+
+        }
+        .box-expertise>h6{
+            margin-left: -207px;
+            margin-top: 50px;
+            font-size:20px;
+            font-weight: lighter;
+        }
+        .tech-skills>h2{
+            padding-left: 140px;
+            font-size: 30px;
+            margin-top: 30px;
+        }
+        .vs-code{
+            display: flex;
+            flex: 1;
+            height:130px;
+            width:110px;
+            margin-left: 140px;
+        }
+        .vs-code>img{
+            height:100px;
+            width:100px;
+        }
+        .vs-code>p{
+            margin-left: -230px;
+            margin-top:105px;
+        }
+        .git{
+            display: flex;
+            flex: 1;
+            height:130px;
+            width:110px;
+            margin-left: 275px;
+            margin-top: -132px;
+        }
+        .git>img{
+            height:97px;
+            width:100px;
+        }
+        .git>p{
+            margin-left:-211px;
+            margin-top:107px;
+        }
+        .devtools{
+            display: flex;
+            flex:1;
+            height:130px;
+            width:160px;
+            margin-left: 415px;
+            margin-top: -132px;
+        }
+        .devtools>img{
+            height:95px;
+            width:160px;
+        }
+        .devtools>p{
+            margin-left: -255px;
+            margin-top: 110px;
+        }
+        .mongo{
+            display: flex;
+            flex:1;
+            height:130px;
+            width:110px;
+            margin-left: 630px;
+            margin-top: -132px;
+        }
+        .mongo>img{
+            height:95px;
+            width:160px;
+        }
+        .mongo>p{
+            margin-left: -235px;
+            margin-top: 110px;
+        }
+        .react{
+            display: flex;
+            flex:1;
+            height:130px;
+            width:110px;
+            margin-left: 787px;
+            margin-top: -132px;
+        }
+        .react>img{
+            height:100px;
+            width:110px;
+        }
+        .react>p{
+            margin-left: -225px;
+            margin-top: 110px; 
+        }
+        .npm{
+            display: flex;
+            flex:1;
+            height:130px;
+            width:160px;
+            margin-left: 905px;
+            margin-top: -132px;
+        }
+        .npm>img{
+            height:100px;
+            width:180px;
+        }
+        .npm>p{
+            margin-left: -255px;
+            margin-top: 110px;
+        }
+        .soft-skills{
+            display: flex;
+            flex:1;
+            height:200px;
+            box-shadow: 0px 0px 40px rgb(196, 192, 192);
+            margin-left: 140px;
+            margin-top: 130px;
+            margin-right: 190px;
+            
+        }
+        .soft-skills>h2{
+            margin-top:-70px;
+            font-size:30px;
+        }
+        .soft-skills>img{
+            height:50px;
+            width:50px;
+            margin-left:10px;
+            margin-top:55px;
+        }
+        .soft-skills>h3{
+            margin-top:133px;
+            margin-left:-110px;
+            font-weight: lighter;
+        }
+        .problem-solving{
+            height:100px;
+            width:100px;
+            margin-left:550px;
+            margin-top:-165px;
+        }
+        .problem-solving>img{
+            height:100px;
+            width:100px;
+            margin-top: -5px;
+        }
+        .problem-solving>h3{
+            margin-top:1px;
+            margin-left:-35px;
+            font-weight: lighter;
+        }
+        .team-lead{
+            height:100px;
+            width:200px;
+            margin-left:800px;
+            margin-top:-100px;
+        }
+        .team-lead>img{
+            height:60px;
+            width:60px;
+            margin-left:40px;
+        }
+        .team-lead>h3{
+            font-weight: lighter;
+            margin-top:30px;
+            margin-left:-80px;
+        }
+        .flex-container{
+            display: flex;
+            flex:1;
+            height:235px;
+            box-shadow: 0px 0px 40px rgb(196, 192, 192);
+            margin-left: 140px;
+            margin-top: 180px;
+            margin-right: 190px;
+            background-color: rgb(251, 248, 248);
+            
+        }
+        .flex-container>h2{
+            font-size:30px;
+            margin-top:-70px;
+        }
+        .flex-box{
+            height:200px;
+            width:200px;
+            margin:10px;
+            box-shadow: 0px 0px 20px rgb(236, 232, 232);
+            
+        }
+        .flex-box>img{
+            height:100px;
+            width:200px;
+            border-radius: 10px;
+        }
+        .flex-box>h3{
+            font-size: 20px;
+            margin-top:0px;
+            margin-left:-110px;;
+        }
+        .flex-box>p{
+            margin-top:-15px;
+            margin-left: -140px;
+            font-size: 15px;
+        }
+        .flex-box>button{
+            width:200px;
+            height:30px;
+            color:white;
+            background-color: blue;
+            border-radius: 5px;
+            margin-top: 20px;
+            border-color: blue;
+        }
+        .button-1{
+            margin-left: 648px;
+            margin-top: 20px;
+        }
+        .button-1>button{
+            height:30px;
+            width:30px;
+            justify-content: center;
+            border-radius: 50px;
+        }
+        .experience>h2{
+        margin-left:140px;
+        font-size:30px;
+        }
+        .google{
+            height:200px;
+            display:flex;
+            margin-left: 140px;
+        }
+        .company-1{
+            height:160px;
+            width:470px;
+            margin:10px;
+            margin-inline-start:70px ;
+            box-shadow: 0px 0px 20px  rgb(196, 192, 192);
+            margin-left:-5px;
+            padding-top: 10px;
+        }
+        .company-1>img{
+            height:110px;
+            width:200px;
+            margin-top:-65px;
+        }
+        .company-1>button{
+            color:white;
+            background-color: blue;
+            border-radius:5px;
+            height:30px;
+            width:180px;
+            border-color: blue;
+            margin-left: -200px;
+        }
+        .company-1>h3{
+            margin-left:42px;
+            font-size: 20px;
+        }
+        .company-2{
+            height:160px;
+            width:470px;
+            margin:10px;
+            margin-left:-5px;
+            margin-inline-start:70px;
+            box-shadow: 0px 0px 20px  rgb(196,192,192);
+            padding-top: 10px;
+        }
+        .company-2>img{
+            height:110px;
+            width:200px;
+            margin-top:-65px;
+        }
+        .company-2>h3{
+            margin-left:42px;
+            font-size: 20px;
+        }
+        .company-2>button{
+            color:white;
+            background-color: blue;
+            border-radius:5px;
+            height:30px;
+            width:180px;
+            border-color: blue;
+            margin-left: -200px;
+        }
+        .education>h2{
+            margin-left: 140px;
+            font-size:30px;
+        }
+        #qualification{
+            margin-left: 140px;
+        }
+        .ssc{
+            font-weight: bold;
+            font-size: 25px;
+        }
+        .circle{
+            width:10px;
+            height:10px;
+            background-color: black;
+            margin-left: 160px;
+            margin-top: -55px;
+            border-radius: 50%;
+        }
+        .line{
+            height:90px;
+            width:2px;
+            margin-left:164px;
+            background-color: black;
+            margin-top:-10px;
+        }
+        #hsc{
+            margin-left:140px;
+            margin-top: -10px;
+        }
+        .Hsc{
+            font-weight:bold;
+            font-size: 25px;
+        }
+        .image{
+            height:250px;
+            width:510px;
+            margin-left: 600px;
+            margin-top: -300px;
+        }
+        .image>img{
+            height:240px;
+            width:500px;
+            border-radius:5px;
+        }
+        .image>p{
+            margin-top:20px;
+            margin-left: -140px;
+        }
+        .black-box{
+            height:300px;
+            background-color:black;
+            margin-top: 250px;
+        }
+        .black-box>img{
+        height:200px;
+        width:200px;
+        margin-left:500px;
+        margin-top: -110px;
+        border-radius: 50%;
+        filter:grayscale(60%);
+        }
+        .black-box>h2{
+            color: white;
+            text-align: center;
+            margin-left: -160px;
+        }
+        .black-box>p{
+            color: white;
+            text-align:center;
+            margin-left: -305px;
+        }
+        .black-box>button{
+            margin-left: 545px;
+            height:30px;
+            width:100px;
+            color:white;
+            background-color: blue;
+            border-radius: 5%;
+            border: 1px blue solid;
+            
+        }
+    
+</style>
+</head>
+<body>
+    <section id="box">
+    <article class="home">
+    <div class="head">
+    <ul>
+    <li>Home</li>
+    </ul>  
+        </div>
+        <div class="about">
+            <ul>
+                <li>About Me</li>
+            </ul>
+        </div>
+        <div class="project">
+            <ul>
+            <li>Project</li>
+            </ul>
+        </div>
+        <div class="skill">
+            <ul>
+            <li>Skills</li>
+            </ul>
+        </div>
+        <div class="contact">
+            <ul>
+            <li>Contact Me</li>
+            </ul>
+        </div>
+    </article>
+        <div class="small">
+        <h3>Performed At <img src="https://techpaathshala.com/assets//images/home/techpathshala_mobile_logo.svg"> <a href="">View More</a></h3>
+        </div>
+        <div class="container">
+            <video>
+                <source src="https://videos.pexels.com/video-files/4496268/4496268-hd_1920_1080_25fps.mp4">
+            </video>
+        </div>
+    </section>
+    <section id="objective">
+        <div class="information">
+            <h2>Front-end developer</h2>
+        </div>
+        <div>
+            <h4>Ashwin Dipak Kathole</h4>
+            <p> I am Bsc-IT student. I completed my Bsc-IT degree <br>from Dandekar college Palghar in this 2024 year. <br>I have knowledge about Html, Css and Basic Javascript.<br>
+                <button class="blue"> Download Resume</button>
+                <button class="white">See My Work</button></p>
+        </div>
+        <div class="picture">
+            <img src="C:\Users\ASHWIN\Desktop\Ashwin image\DSC07321.JPG">
+        </div>
+        <div class="box1">
+            <p>I'm Suitable For</p>
+            <hr>
+            <div class="html">
+            Html Developer
+            </div>
+            <div class="css">
+            Css Developer
+            </div>
+            <div class="javascript">
+                Javascript Developer
+                </div>
+        </div>
+        <div class="expertise">
+            <h2>Expertise</h2>
+        </div>
+        <div class="box-expertise">
+            <img src="C:\Users\ASHWIN\Desktop\backend iamge.jfif">
+            <h2>Front-end developer</h2>
+            <h6>I am a fresher seeking a position as a front-end<br> developer, eager to contribute with my skills<br> in HTML, CSS, and JavaScript.</h6>
+        </div>
+        <div class="tech-skills">
+        <h2>Tech Skills</h2>
+        </div>
+        <div class="vs-code">
+            <img src="C:\Users\ASHWIN\Desktop\Vikas wedding\images.jfif">
+            <p>VSCODE</p>
+        </div>
+        <div class="git">
+            <img src="C:\Users\ASHWIN\Desktop\git.png">
+            <p>GIT</p>
+        </div>
+        <div class="devtools">
+            <img src="C:\Users\ASHWIN\Desktop\devtool.jfif">
+            <p>DEVTOOLS</p>
+        </div>
+        <div class="mongo">
+            <img src="C:\Users\ASHWIN\Desktop\mongo.png">
+            <p>MongoDB</p>
+        </div>
+        <div class="react">
+            <img src="C:\Users\ASHWIN\Desktop\react.png">
+            <p>ReactJS</p>
+        </div>
+        <div class="npm">
+            <img src="C:\Users\ASHWIN\Desktop\npm.png">
+            <p>NPM</p>
+        </div>
+        <div class="soft-skills">
+            <h2>Soft Skills</h2>
+            <img src="C:\Users\ASHWIN\Desktop\cloc2.png">
+            <h3>Time <br>Management</h3>
+        </div>
+        <div class="problem-solving"> 
+            <img src="C:\Users\ASHWIN\Desktop\checkbox.png">
+            <h3>Problem<br> Solving</h3>
+        </div>
+        <div class="team-lead"> 
+            <img src="C:\Users\ASHWIN\Desktop\team.png">
+            <h3>Excellent<br>Team Lead</h3>
+        </div>
+        <div class="flex-container">
+        <h2>Project</h2>
+        <div class="flex-box">
+            <img src="C:\Users\ASHWIN\Desktop\project1.jfif">
+            <h3>Project Name</h3>
+            <p>Project Discription</p>
+            <button>View Project</button>
+        </div>
+        <div class="flex-box">
+            <img src="C:\Users\ASHWIN\Desktop\project2.jfif">
+            <h3>Project Name</h3>
+            <p>Project Discription</p>
+            <button>View Project</button>
+        </div>
+        <div class="flex-box">
+            <img src="C:\Users\ASHWIN\Desktop\project.jpeg">
+            <h3>Project Name</h3>
+            <p>Project Discription</p>
+            <button>View Project</button>
+        </div>
+        <div class="flex-box">
+            <img src="C:\Users\ASHWIN\Desktop\project4.jfif">
+            <h3>Project Name</h3>
+            <p>Project Discription</p>
+            <button>View Project</button>
+        </div>
+        </div>
+        <div class="button-1">
+            <button><</button>
+            <button>></button>
+        </div>
+        <div class="experience">
+            <h2>Experience</h2>
+        </div>
+        <div class="google">
+            <div class="company-1">
+                <h3>Company Name</h3>
+                <img src="C:\Users\ASHWIN\Desktop\google.png">
+                <button>Know More</button>
+            </div>
+            <div class="company-2">
+                <h3>Company name</h3>
+                <img src="C:\Users\ASHWIN\Desktop\google.png">
+                <button>view more</button>
+            </div>
+        </div>
+        </div>
+        <div class="education">
+            <h2>Qualification</h2>
+        </div>
+        <ul id="qualification">
+        <div class="ssc">SSC</div>
+        <div>s.v.v.m School Wada, 2017-2018</div>
+        </ul>
+        <div class="circle"></div>
+        <div class="line"></div>
+        <ul id="hsc">
+            <div class="Hsc">HSC</div>
+            <div>s.v.v.m clg Wada, 2019-2020</div>
+            </ul>
+        <div class="circle"></div>
+        <div class="line"></div>
+        <ul id="hsc">
+            <div class="Hsc">Bachelors</div>
+            <div>s.d.s.m clg 2022-2024</div>
+            </ul>
+        <div class="circle"></div>
+        <div class="line"></div>
+        <ul id="hsc">
+            <div class="Hsc">Trainning Certificate</div>
+            <div>XYZ institute 20XX-20XX</div>
+            </ul>
+        <div class="circle"></div>
+        <div class="image">
+            <img src="C:\Users\ASHWIN\Desktop\student.jfif">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum beatae, deserunt doloribus ipsam odit ab quos quas consectetur aliquid mollitia quia. Harum veniam neque hic assumenda voluptas quaerat consequatur ipsum!</p>
+        </div>
+        <div class="black-box">
+        <img src="C:\Users\ASHWIN\Desktop\Ashwin image\ashwi2.png">
+        <h2>Ashwin Kathole</h2><br>
+        <p>ashwinkathole2001@gmail.com</p><br><br>
+        <p>8788869121</p><br>
+        <button>Contact me</button>
+        </div>
+</section>
+</body>
+</html>
